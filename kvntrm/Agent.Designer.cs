@@ -32,7 +32,6 @@
             this.labelPosition = new System.Windows.Forms.Label();
             this.textBoxPosition = new System.Windows.Forms.TextBox();
             this.labelDep = new System.Windows.Forms.Label();
-            this.textBoxDep = new System.Windows.Forms.TextBox();
             this.labelTerm = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
             this.textBoxTerm = new System.Windows.Forms.TextBox();
@@ -57,6 +56,7 @@
             this.buttonDel = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelFirstName = new System.Windows.Forms.Label();
+            this.comboBoxDepart = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,15 +90,6 @@
             this.labelDep.Size = new System.Drawing.Size(59, 25);
             this.labelDep.TabIndex = 58;
             this.labelDep.Text = "Отдел";
-            // 
-            // textBoxDep
-            // 
-            this.textBoxDep.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxDep.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxDep.Location = new System.Drawing.Point(83, 412);
-            this.textBoxDep.Name = "textBoxDep";
-            this.textBoxDep.Size = new System.Drawing.Size(160, 27);
-            this.textBoxDep.TabIndex = 57;
             // 
             // labelTerm
             // 
@@ -324,18 +315,27 @@
             this.labelFirstName.TabIndex = 62;
             this.labelFirstName.Text = "Имя";
             // 
+            // comboBoxDepart
+            // 
+            this.comboBoxDepart.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxDepart.FormattingEnabled = true;
+            this.comboBoxDepart.Location = new System.Drawing.Point(81, 412);
+            this.comboBoxDepart.Name = "comboBoxDepart";
+            this.comboBoxDepart.Size = new System.Drawing.Size(160, 27);
+            this.comboBoxDepart.TabIndex = 93;
+            // 
             // Agent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::kvntrm.Properties.Resources.BG_for_IS;
             this.ClientSize = new System.Drawing.Size(953, 567);
+            this.Controls.Add(this.comboBoxDepart);
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelPosition);
             this.Controls.Add(this.textBoxPosition);
             this.Controls.Add(this.labelDep);
-            this.Controls.Add(this.textBoxDep);
             this.Controls.Add(this.labelTerm);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.textBoxTerm);
@@ -365,7 +365,6 @@
         private System.Windows.Forms.Label labelPosition;
         private System.Windows.Forms.TextBox textBoxPosition;
         private System.Windows.Forms.Label labelDep;
-        private System.Windows.Forms.TextBox textBoxDep;
         private System.Windows.Forms.Label labelTerm;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.TextBox textBoxTerm;
@@ -389,5 +388,6 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonDel;
         private System.Windows.Forms.Label labelFirstName;
+        private System.Windows.Forms.ComboBox comboBoxDepart;
     }
 }
